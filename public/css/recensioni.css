@@ -1,0 +1,379 @@
+
+body{
+    margin:0;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 25px ;
+    font-style:normal ;
+    font-weight:normal ;
+    color:white;
+    background-color: black;
+    text-align: left;
+}
+a{
+    cursor: pointer;
+  }
+  
+  #link a:hover{
+     color:red;
+     text-decoration : underline;
+    }
+  
+    #link a:active{
+      color : Red;
+      text-decoration: underline;
+    }
+
+  
+
+ #link a{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px;
+text-decoration: none;
+  }
+
+
+    #Logo{
+      color: red;
+        font-size: 50px;
+        font-family:fantasy;
+        font-style: oblique;
+        font-weight:lighter;
+        padding: 5px;
+        text-align: left;
+      }
+      header::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+  
+      p{
+          text-align: center;
+      }
+      #info{
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       z-index:1;
+    }
+
+    #info h1{
+        color: white;
+
+        margin-top: 50px;
+    }
+  header{
+    color:black;
+    display: flex;
+    background-image: url("/images/header_movies.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 600px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  header nav{
+    background-color:black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    height: 12%;
+  }
+
+
+  #menu{
+    display: none;
+  }
+  
+  .links_mobile{
+      display: none;
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100vh;
+      width: 100vh;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 2;  
+    }
+  
+    .mobile{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100vh;
+      width:-webkit-fill-available;
+      background-color: rgba(0, 0, 0, 0.9);
+      z-index: 2;
+      
+    }
+  
+    .no-scroll{
+      overflow: hidden;
+    }
+  
+    .mobile a:hover{
+  
+        color:red;
+        text-decoration : underline;
+       }
+     
+      .mobile a:active{
+         color : Red;
+         text-decoration: underline;
+       }
+    
+       .mobile a{
+        color: white;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 25px;
+        text-align: center;
+        padding: 10px;
+    text-decoration: none;
+      }
+
+     
+
+footer{
+    padding: 40px;
+    background-color:rgb(98, 4, 4);
+    margin-top: 50px;
+    height: 100px;
+  }
+  
+  footer address, footer p{
+    font-size:30px ;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+    font-style:oblique;
+    color: aliceblue;
+  }
+
+section
+{
+ display: flex;
+ flex-direction: column;
+}
+#menu{
+  display: none;
+}
+
+
+ 
+
+.container_reviews{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+    
+
+}
+
+.container{
+  height: 30%;
+    position:relative;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    border-radius: 3px;
+    border: 3px solid rgb(245, 244, 244);
+    box-sizing: border-box;
+    background-color: #050505;
+    margin-top: 20px;
+    padding: 10px;
+    margin-right: 1%;
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 5px rgba(104, 102, 102, 0.6);
+    align-items: center;
+}
+
+.immagine{
+
+  width: 50%;
+  align-items: center;
+  margin:1%;
+}
+
+.name{
+
+  size: 12px;
+  text-align: center;
+  color: rgb(246, 242, 242);
+  font-family: cursive;
+  font-style: italic;
+}
+
+.blocco_commento{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgb(248, 247, 247);
+  border-radius: 3px;
+  width: -webkit-fill-available;
+ 
+}
+.blocco_immagine{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.commento{
+  color:white;
+    text-align: center;
+    justify-items: center;
+    font-family: serif;
+      font-style: italic;
+      font-weight: inherit;
+  
+  }
+
+  @media (max-width: 500px) {
+    
+    #link a{
+      display: none;
+      }
+  
+      
+      h1{
+        font-size: 20px;
+      }
+      #menu{
+        display: block;
+      }
+  
+    #menu div{
+      display: block;
+      cursor: pointer;
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 15px;
+    }
+  
+  
+  
+    .button{
+      font-size: 0.6em;
+   }
+   
+   
+  
+    #Logo{
+        font-size: 1.3em;
+    }
+  
+    
+    header{
+        height: 70vh;
+    }
+  
+        footer address, footer p{
+  
+      font-size: 0.8em;
+                             }
+    footer
+  {
+   height: 10vh;
+  
+  }
+  
+  .name{
+  
+    font-size: 14px;
+    text-align: center;
+    color: white;
+   
+  
+  }
+  
+  .container{
+  
+    
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:black;
+    border:solid #dcdcdc 1px ;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  section p{
+  
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: darkred;
+   }
+
+   
+.immagine{
+
+  width: 30%;
+  align-items: center;
+  margin:1%;
+}
+
+.name{
+
+  size: 9px;
+  text-align: center;
+  color: rgb(246, 242, 242);
+  font-family: cursive;
+  font-style: italic;
+}
+
+.blocco_commento{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgb(248, 247, 247);
+  border-radius: 3px;
+  width: -webkit-fill-available;
+ 
+}
+.blocco_immagine{
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.commento{
+  color:white;
+    text-align: center;
+    justify-items: center;
+    font-family: serif;
+      font-style: italic;
+      font-weight: inherit;
+  
+  }
+  }
